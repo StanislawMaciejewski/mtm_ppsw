@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\stasm\OneDrive\Pulpit\GPIO\15\GPIO.uvproj
+Project File Date:  05/13/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+main.c(10): warning:  #1294-D: Old-style function Delay
+linking...
+Program Size: Code=768 RO-data=32 RW-data=12 ZI-data=1260  
+".\GPIO.axf" - 0 Errors, 1 Warning(s).
