@@ -15,7 +15,7 @@ void Delay(unsigned int uiDelayValue){
 
 int main(){
 	LedInit();
-	KeyboardInit();
+	KeyboardInit();//sdjhbfjksbh
 
 	
 	while(1){
