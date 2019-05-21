@@ -1,0 +1,18 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\stasm\OneDrive\Pulpit\Automaty\1B1\Maciejewski.uvproj
+Project File Date:  05/21/2019
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+linking...
+Program Size: Code=804 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+".\Maciejewski.axf" - 0 Errors, 0 Warning(s).
+Clean started: Project: 'Maciejewski'
+   deleting intermediate output files for target 'Target 1'
