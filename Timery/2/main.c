@@ -4,10 +4,10 @@
 
 int main(){
 	LedInit();
-	InitTimer0Match0(1000);
 		
 	while(1)
 	{
+		InitTimer0Match0(100000);
 		LedStep(LEFT);
 		WaitOnTimer0Match0();
 	}
