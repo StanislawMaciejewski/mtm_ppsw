@@ -1,0 +1,22 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\stasm\OneDrive\Dokumenty\Przerwania\2\Przerwania.uvproj
+Project File Date:  05/30/2019
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.c(57): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+main.c(54): warning:  #1-D: last line of file ends without a newline
+compiling timer.c...
+timer.h(4): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=908 RO-data=32 RW-data=4 ZI-data=1260  
+".\Przerwania.axf" - 0 Errors, 4 Warning(s).

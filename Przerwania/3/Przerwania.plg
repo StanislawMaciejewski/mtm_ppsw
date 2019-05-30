@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\stasm\OneDrive\Dokumenty\Przerwania\3\Przerwania.uvproj
+Project File Date:  05/30/2019
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+led.c(67): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+main.c(27): warning:  #174-D: expression has no effect
+main.c(59): warning:  #1-D: last line of file ends without a newline
+compiling timer.c...
+linking...
+Program Size: Code=964 RO-data=32 RW-data=8 ZI-data=1256  
+".\Przerwania.axf" - 0 Errors, 6 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+led.c(67): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+main.c(59): warning:  #1-D: last line of file ends without a newline
+compiling timer.c...
+linking...
+Program Size: Code=980 RO-data=32 RW-data=8 ZI-data=1256  
+".\Przerwania.axf" - 0 Errors, 5 Warning(s).
+Clean started: Project: 'Przerwania'
+   deleting intermediate output files for target 'Target 1'
