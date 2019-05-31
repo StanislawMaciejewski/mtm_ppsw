@@ -1,0 +1,29 @@
+Dependencies for Project 'Servo', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x51C89A0E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\keyboard.c)(0x5CF12012)()
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C89A3C)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\keyboard.h)(0x5CF12012)
+F (.\led.c)(0x5CF12012)()
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C89A3C)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\led.h)(0x5CF12012)
+F (.\main.c)(0x5CF12012)()
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\led.h)(0x5CF12012)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\keyboard.h)(0x5CF12012)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\servo.h)(0x5CF12012)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\timer_interrupts.h)(0x5CF12012)
+F (.\servo.c)(0x5CF12D17)()
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C89A3C)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\led.h)(0x5CF12012)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\servo.h)(0x5CF12012)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\timer_interrupts.h)(0x5CF12012)
+F (.\timer.c)(0x5CF12012)()
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C89A3C)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\timer.h)(0x5CF12012)
+F (.\timer_interrupts.c)(0x5CF12012)()
+I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C89A3C)
+I (C:\Users\student\Desktop\Repo\mtm_ppsw\Servo\4\timer_interrupts.h)(0x5CF12012)
+F (.\keyboard.h)(0x5CF12012)()
+F (.\led.h)(0x5CF12012)()
+F (.\servo.h)(0x5CF12012)()
+F (.\timer.h)(0x5CF12012)()
+F (.\timer_interrupts.h)(0x5CF12012)()

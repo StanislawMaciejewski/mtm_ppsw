@@ -14,22 +14,19 @@ enum DetectorState eReadDetector(void)
 {
 	if((IO0PIN & DETECTOR_bm) == 0)
 	{
-		if ((IO0PIN & DETECTOR_bm) == 0)
-		{
-			return ACTIVE;
-		}
+		return ACTIVE;
 	}
 	return INACTIVE;
 }
 
 struct Servo sServo;
 
-void ServoInit(unsigned int uiServoFrequency)
+void ServoInit()//(unsigned int uiServoFrequency)
 {
 	LedInit();
-	DetectorInit();
-	Timer0Interrupts_Init((1000000/uiServoFrequency), &Automat);
-	ServoCallib();
+	//DetectorInit();
+	//Timer0Interrupts_Init((1000000/uiServoFrequency), &Automat);
+	//ServoCallib();
 }
 
 void ServoCallib(void)
@@ -38,9 +35,26 @@ void ServoCallib(void)
 }
 
 
-void ServoGoTo(void)
+void ServoGoTo(unsigned int uiPosition)
 {
 	sServo.uiDesiredPosition = uiPosition;
+	
+	if(sServo.uiDesiredPosition > sServo.uiCurrentPosition)
+				{
+					while(sServo.uiDesiredPosition != sServo.uiCurrentPosition)
+					{
+						LedStepRight();
+						sServo.uiCurrentPosition++;
+					}
+				}
+	else if(sServo.uiDesiredPosition < sServo.uiCurrentPosition)
+				{
+					while(sServo.uiDesiredPosition != sServo.uiCurrentPosition)
+					{
+						LedStepRight();
+						sServo.uiCurrentPosition++;
+					}
+				}
 }
 
 
@@ -74,12 +88,12 @@ void Automat(void)
 				break;
 				
 			case IN_PROGRESS:
-				if(sServo.uiDesiredPosition > sServo.uiCurrentPosition))
+				if(sServo.uiDesiredPosition > sServo.uiCurrentPosition)
 				{
 					LedStepRight();
 					sServo.uiCurrentPosition++;
 				}
-				else if(sServo.uiDesiredPosition < sServo.uiCurrent)
+				else if(sServo.uiDesiredPosition < sServo.uiCurrentPosition)
 				{
 					LedStepLeft();
 					sServo.uiCurrentPosition--;

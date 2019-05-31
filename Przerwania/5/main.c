@@ -5,11 +5,10 @@
 void Automat(void)
 {
 		enum LedState{STATE_LEFT, STATE_STOP, STATE_RIGHT};
-		enum LedState eLedState = STATE_STOP; // static??
+		static enum LedState eLedState = STATE_STOP; 
 	
 		KeyboardInit ();
-		LedInit();
-		
+
 		switch (eLedState)
 		{
 			case STATE_RIGHT:
@@ -54,9 +53,11 @@ int main (){
 	unsigned int iMainLoopCtr;
 	
 	LedInit();
-	Timer0Interrupts_Init(2000, &Automat);
+	Timer1Interrupts_Init(2000, &Automat);
 
 	while(1){
+		jhfjhfhgf
+		hghfgh
 	 	iMainLoopCtr++;
 	}
 }
