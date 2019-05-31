@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\stasm\OneDrive\Pulpit\Servo\1\servo.uvproj
+Project File Date:  05/31/2019
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+led.c(67): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+main.c(15): error:  #70: incomplete type is not allowed
+main.c(15): error:  #65: expected a ";"
+main.c(38): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(39): error:  #169: expected a declaration
+main.c(44): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(46): error:  #169: expected a declaration
+main.c(55): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(57): error:  #169: expected a declaration
+main.c(68): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(69): error:  #169: expected a declaration
+main.c(82): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+compiling timer_interrupts.c...
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(50): warning:  #1-D: last line of file ends without a newline
+".\servo.axf" - 6 Errors, 15 Warning(s).
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+led.c(67): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(50): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=1348 RO-data=32 RW-data=8 ZI-data=1256  
+".\servo.axf" - 0 Errors, 10 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling keyboard.c...
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+compiling led.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+led.c(67): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+led.h(7): warning:  #1-D: last line of file ends without a newline
+keyboard.h(4): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+compiling timer_interrupts.c...
+timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+timer_interrupts.h(2): warning:  #1-D: last line of file ends without a newline
+timer_interrupts.c(50): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=1388 RO-data=32 RW-data=8 ZI-data=1256  
+".\servo.axf" - 0 Errors, 10 Warning(s).
