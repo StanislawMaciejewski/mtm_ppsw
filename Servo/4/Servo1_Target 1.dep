@@ -1,0 +1,12 @@
+Dependencies for Project 'Servo1', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x51C89A0E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\keyboard.c)(0x5CF75CFA)()
+F (.\led.c)(0x5CF75CFA)()
+F (.\main.c)(0x5CF75CFA)()
+F (.\servo.c)(0x5CF75CFA)()
+F (.\timer.c)(0x5CF75CFA)()
+F (.\timer_interrupts.c)(0x5CF75CFA)()
+F (.\keyboard.h)(0x5CF75CFA)()
+F (.\led.h)(0x5CF75CFA)()
+F (.\servo.h)(0x5CF75CFA)()
+F (.\timer.h)(0x5CF75CFA)()

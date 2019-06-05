@@ -4,6 +4,7 @@
 #include "timer_interrupts.h"
 
 #define DETECTOR_bm (1<<10)
+#define START_POSITION 24
 
 void DetectorInit(void)
 {
@@ -21,40 +22,27 @@ enum DetectorState eReadDetector(void)
 
 struct Servo sServo;
 
-void ServoInit()//(unsigned int uiServoFrequency)
+//unsigned int uiCallibPosition = 0;
+
+void ServoInit(unsigned int uiServoFrequency)
 {
 	LedInit();
-	//DetectorInit();
-	//Timer0Interrupts_Init((1000000/uiServoFrequency), &Automat);
-	//ServoCallib();
+	DetectorInit();
+	Timer0Interrupts_Init((1000000/uiServoFrequency), &Automat);
+	ServoCallib();
 }
 
 void ServoCallib(void)
 {
 	sServo.eState = CALLIB;
+	while(sServo.eState != IDLE){};
 }
-
 
 void ServoGoTo(unsigned int uiPosition)
 {
-	sServo.uiDesiredPosition = uiPosition;
-	
-	if(sServo.uiDesiredPosition > sServo.uiCurrentPosition)
-				{
-					while(sServo.uiDesiredPosition != sServo.uiCurrentPosition)
-					{
-						LedStepRight();
-						sServo.uiCurrentPosition++;
-					}
-				}
-	else if(sServo.uiDesiredPosition < sServo.uiCurrentPosition)
-				{
-					while(sServo.uiDesiredPosition != sServo.uiCurrentPosition)
-					{
-						LedStepRight();
-						sServo.uiCurrentPosition++;
-					}
-				}
+	sServo.uiDesiredPosition = uiPosition+START_POSITION;
+	sServo.eState=IN_PROGRESS;
+	while(sServo.eState != IDLE){};
 }
 
 
@@ -72,12 +60,13 @@ void Automat(void)
 					LedStepRight();
 					sServo.eState = IDLE;
 					sServo.uiCurrentPosition = 0;
-					sServo.uiDesiredPosition = 0;
+					sServo.uiDesiredPosition = START_POSITION;
 				}
 				break;
+					
 			
 			case IDLE:
-				if(sServo.uiCurrentPosition != sServo.uiDesiredPosition)
+				if(sServo.uiCurrentPosition != sServo.uiDesiredPosition+START_POSITION)
 				{
 					sServo.eState = IN_PROGRESS;
 				}

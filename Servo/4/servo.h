@@ -3,8 +3,9 @@ void DetectorInit(void);
 enum DetectorState {ACTIVE, INACTIVE};
 enum DetectorState eReadDetector(void);
 
-enum ServoState {CALLIB, IDLE, IN_PROGRESS};
+enum ServoState {CALLIB, CALLIB12, IDLE, IN_PROGRESS};
 
+//unsigned int uiCallibPosition;
 
 struct Servo
 {
@@ -15,5 +16,6 @@ struct Servo
 
 void Automat(void);
 void ServoCallib(void);
-void ServoInit()://(unsigned int uiServoFrequency);
+void ServoCallib12(void);
+void ServoInit(unsigned int uiServoFrequency);
 void ServoGoTo(unsigned int uiPosition);
